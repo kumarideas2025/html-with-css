@@ -1,0 +1,257 @@
+/* li, div{
+color: hotpink;
+} */
+/* .class { */
+/* color:rgba(237,240,6,0.226); */
+/* color:#ff0000; // hexa decilam value */
+/* color:hsl(98,69%,59%);// saturate color */
+
+/* } */
+
+body {
+    background-color: hwb(0 21% 76%);
+    /* background-image: url('../img/kowshik2.jpg'); */
+    /* background-repeat: no-repeat; */
+    /* background-position: right top; */
+    background-attachment: fixed;
+
+    /* background:#d1d1ce url('../img/kowshik2.jpg') no-repeat right top; */
+    /* if i apply margin =0 px .then there will be no margine */
+    margin: 0px;
+}
+
+/* padding & marging */
+.nav {
+    background-color: #b82e2e;
+}
+
+.iteams {
+    background-color: hsl(173, 11%, 83%);
+    margin: 0px;
+    list-style-type: circcul;
+    height: 24px;
+    padding: 24px;
+    /* will cut the box into half and color in right site */
+    width: 50%;
+    /* will transfer links in te right site */
+    margin-left: auto;
+    font-size: 25px;
+
+}
+
+.iteam {
+    /* background-color: #b0f502; */
+    display: flexbox;
+
+}
+
+.class {
+    /* css hand book for more information */
+    /* border-style: solid; */
+    /* border-width: 200px; */
+    /* border-color: black; */
+    /* border-top-style: dotted; */
+    border: 66px solid green;
+    /* border corner round */
+    border-radius: 16px;
+    /* marggin for css */
+    /* margin:134px; */
+    /* margin-top:44px;
+  margin-left :66px;
+  margin-right:40px; */
+    /* shot hand property of margin */
+    /* order is= top right bottom left */
+    /* margin:44px 66px 40px 2px; */
+
+    margin: 50px;
+    width: 50%;
+    height: 44px;
+    /* margin always works from horizontaliy */
+
+    /* we use inhert for margin  */
+    /* margin:inherit; */
+
+    /* margin colapes means space which is defined by margin but inthere 2 div function so , which one has the bigger px will be count as margin between 2 : compair between class margin 5px and 44 px */
+
+
+
+
+
+
+    /* pdding in css  : means distance inside the div */
+    padding: 20px 40px 70px 20px;
+
+    /* use outline to look attracktive:is mainly show in with outerpart border */
+    outline: 4px solid black;
+
+    /* text formatting */
+    color: orangered;
+    text-align: center;
+    /* word-spacing: 1%;
+    text-shadow: #3d1775;
+    text-decoration: dotted; */
+
+    font-family: sans-serif;
+    font-style: initial;
+    font-size: 1.4vw;
+    /* vw= means with resize with screen large or big and it works like figma constrac */
+    /* emp=166px.we can also use em,% */
+}
+
+/* for a herf website=code with harry */
+/* .class a{
+    text-decoration: line;
+
+    text-transform:capitalize;
+    text-transform:uppercase;
+
+
+   letter-spacing:4px ;} */
+
+
+
+/* use mouse for hover =if we get mouse in (this)  link so color of lnk will e chang */
+a {
+    text-decoration: none;
+    text-transform: capitalize;
+    letter-spacing: 2px;
+    color: aliceblue;
+    margin: 0 16 px;
+    font-size: 1.5vw;
+}
+
+
+a:hover {
+    background-color: hsla(72, 100%, 53%, 0.866);
+    color: rgb(22, 22, 21);
+    font-size: 1.8em;
+}
+
+/* usr active to big the link when we tap the link and 1.4 em is means the size  */
+a:active {
+    font-size: 1.4em;
+}
+
+/* div= multipal line elements :show */
+/* span=one lline elements show */
+
+
+
+/* to hide or not display any info */
+/* we make a new class first */
+/* .class2{
+    visibility: hidden;
+    but in visibility the space between both is show .so we use diplay to hide space
+
+   display:none ;
+} */
+
+
+/* we can use max-width to save the constractor like figa is not more samller than that  */
+
+
+/* position learing in css */
+
+
+#box {
+    position: relative;
+
+    /* that top=value will given the space between two box .1st box will stand same place but 2nd one will go down cause we use to */
+    top: 40px;
+
+
+
+
+
+
+
+    /* ////// if we use use position =fixed and  bottom & top=0.then make many div . ( we can see the fixed position div reman stay but other can be scroll)
+ we use it to make chatbox.so we can fixed that one div fixed stay */
+
+
+    /* position: absolute;
+top:0%;
+bottom=0%; */
+
+}
+
+
+/* lear float property in css */
+
+.container {
+    width: 100%;
+    height: 70px;
+    padding: 5px;
+    border: 3px dotted pink;
+
+    /* box-sizing will give the right to scroll horizontaliyya .means left to right or right to left  */
+    box-sizing=border-box;
+}
+
+.first {
+    background-color: #b82e2e;
+    height: 45px;
+    width: 30%;
+    /* inline-block use for attach them in one line */
+    display: inline-block;
+
+    float: right;
+    border: 3px solid yellow;
+}
+
+.second {
+    background-color: blue;
+    height: 45px;
+    width: 30%;
+    display: inline-block;
+
+}
+
+
+/* flex box for css */
+.myflex {
+    background-color: yellow;
+    display: flex;
+    flex-direction: row;
+    /* if we use wrap reverse then element will show back to first */
+    /* flex-wrap:wrap-reverse; */
+    flex-wrap: wrap;
+    justify-content: center;
+    /* justify-content:we can use flex(start/end) to located those elements left or right */
+
+    height: 200px;
+    align-items: center;
+    /* we can use align iteams base size for one line elemenet */
+}
+
+
+
+.myflex>div {
+    background: violet;
+    width: 80px;
+    height: 60px;
+
+    /* we can use 1.9vw in fornt size */
+    font-size: 25px;
+    margin: 8px;
+
+}
+
+.mycount {
+    background-color: white;
+    height: auto;
+    width: auto;
+    font-size: 22px;
+    padding: 40px;
+    margin: 4px;
+    border: 4px dotted red;
+    justify-content: baseline;
+
+}
+
+.image2 {
+    height: 20px;
+    float: right;
+    margin-left: 20px width: 10px;
+    font: 1em sans-serif;
+}
